@@ -17,3 +17,7 @@ Output:
 dist/bundle.js
 dist/index.html
 ```
+
+When page is loaded in the browser it looks like this:
+
+![Screenshot](docs/images/demo-vue.PNG)
