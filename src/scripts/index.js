@@ -3,7 +3,7 @@ import App from '../views/App.vue';
 import VueRouter from 'vue-router';
 import HelloWorld from '../views/components/HelloWorld.vue'
 import Demos from '../views/components/Demos.vue'
-import Demo1 from '../views/components/Demo1.vue'
+import DemoGreeting from '../views/components/demoGreeting.vue'
 import Demo2 from '../views/components/Demo2.vue'
 import DemoAjaxList from '../views/components/DemoAjaxList.vue'
 
@@ -31,8 +31,8 @@ const router = new VueRouter({
             component: Demos
         },
         {
-            path: '/demo1',
-            component: Demo1
+            path: '/demoGreeting',
+            component: DemoGreeting
         },
         {
             path: '/demo2',

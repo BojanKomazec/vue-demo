@@ -8,5 +8,6 @@
             "language": "vue",
             "autoFix": true
         }
-    ]
+    ],
+    "editor.tabSize": 2
 }
