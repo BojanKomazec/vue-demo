@@ -17,6 +17,9 @@ import resolve from 'rollup-plugin-node-resolve'
 // https://github.com/rollup/rollup/issues/805
 import replace from 'rollup-plugin-replace'
 
+// used to allow using __dirname in js files
+import nodeGlobals from 'rollup-plugin-node-globals'
+
 export default {
   input: 'src/scripts/index.js',
   output: {
@@ -33,8 +36,9 @@ export default {
         exclude: 'node_modules/**'
     }),
     copy({
-        "src/views/index.html": "dist/index.html"
+        "src/views/index.html": "dist/index.html",
     }),
     resolve(),
+    nodeGlobals(),
   ]
 }
