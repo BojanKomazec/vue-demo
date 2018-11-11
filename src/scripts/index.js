@@ -5,6 +5,7 @@ import HelloWorld from '../views/components/HelloWorld.vue'
 import Demos from '../views/components/Demos.vue'
 import Demo1 from '../views/components/Demo1.vue'
 import Demo2 from '../views/components/Demo2.vue'
+import DemoAjaxList from '../views/components/DemoAjaxList.vue'
 
 Vue.config.productionTip = false;
 
@@ -36,6 +37,10 @@ const router = new VueRouter({
         {
             path: '/demo2',
             component: Demo2
+        },
+        {
+            path: '/demoAjaxList',
+            component: DemoAjaxList
         }
     ]
 });
