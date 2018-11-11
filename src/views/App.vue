@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <p>This is App.vue template.</p>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <router-view></router-view>
+    <img 
+      alt="Vue logo"
+      src="../assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
@@ -10,7 +12,7 @@
     import HelloWorld from "./components/HelloWorld.vue";
 
     export default {
-        name: "app",
+        name: "App",
         components: {
             HelloWorld
         }

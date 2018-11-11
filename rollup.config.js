@@ -20,6 +20,10 @@ import replace from 'rollup-plugin-replace'
 // used to allow using __dirname in js files
 import nodeGlobals from 'rollup-plugin-node-globals'
 
+import { eslint } from 'rollup-plugin-eslint'
+
+
+
 export default {
   input: 'src/scripts/index.js',
   output: {
@@ -28,6 +32,9 @@ export default {
     name: 'bundle'
   },
   plugins: [
+    eslint({
+        exclude: [ 'node_modules/**', 'dist/**' ],
+    }),
     replace({
         'process.env.NODE_ENV': JSON.stringify('development')
     }),

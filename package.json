@@ -7,8 +7,10 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "eslint-plugin-vue": "^4.7.1",
     "rollup": "^0.66.6",
     "rollup-copy-plugin": "^0.1.0",
+    "rollup-plugin-eslint": "^5.0.0",
     "rollup-plugin-img": "^1.1.0",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^3.4.0",
