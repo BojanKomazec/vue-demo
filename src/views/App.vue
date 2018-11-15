@@ -4,6 +4,7 @@
     <img 
       alt="Vue logo"
       src="../assets/logo.png">
+    <!-- This is a single router-view in whole application -->
     <router-view/>
   </div>
 </template>

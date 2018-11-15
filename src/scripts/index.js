@@ -6,6 +6,8 @@ import Demos from '../views/components/Demos.vue'
 import DemoGreeting from '../views/components/demoGreeting.vue'
 import Demo2 from '../views/components/Demo2.vue'
 import DemoAjaxList from '../views/components/DemoAjaxList.vue'
+import DemoEventBinding from '../views/components/DemoEventBinding.vue'
+import DemoOneWayDataBinding from '../views/components/demoOneWayDataBinding.vue'
 
 Vue.config.productionTip = false;
 
@@ -41,6 +43,14 @@ const router = new VueRouter({
         {
             path: '/demoAjaxList',
             component: DemoAjaxList
+        },
+        {
+            path: '/demoEventBinding',
+            component: DemoEventBinding
+        },
+        {
+            path: '/demoOneWayDataBinding',
+            component: DemoOneWayDataBinding
         }
     ]
 });
