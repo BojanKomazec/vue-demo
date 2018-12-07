@@ -8,6 +8,8 @@ import Demo2 from '../views/components/Demo2.vue'
 import DemoAjaxList from '../views/components/DemoAjaxList.vue'
 import DemoEventBinding from '../views/components/DemoEventBinding.vue'
 import DemoOneWayDataBinding from '../views/components/demoOneWayDataBinding.vue'
+import DemoChild1 from '../views/components/demoChild1.vue'
+import DemoChild2 from '../views/components/demoChild2.vue'
 
 Vue.config.productionTip = false;
 
@@ -20,13 +22,19 @@ const router = new VueRouter({
         {
             path: '/',
             component: HelloWorld,
-            props: { msg : "Welcome to Your Vue.js App" }
-            // children: [
-            //     {
-            //         path: 'demo1',
-            //         component: Demo1
-            //     }
-            // ]
+            props: { msg : "Welcome to Your Vue.js App" },
+            children: [
+                {
+                    path: 'demoChild1',
+                    component: DemoChild1,
+                    children: [
+                      {
+                          path: 'demoChild2',
+                          component: DemoChild2
+                      },
+                    ]
+                },
+            ]
         },
         {
             path: '/demos',

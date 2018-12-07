@@ -1,4 +1,5 @@
 <template>
+import { setInterval } from 'timers';
   <div>
     <p>Greeting</p>
     <p v-if="hours < 12">Good morning!</p>
@@ -18,6 +19,7 @@
 <script>
     export default {
         name: 'DemoGreeting',
+        // data contains initial values
         data: function() {
             return {
                 hours: new Date().getHours(),
@@ -32,4 +34,5 @@
     /* v-show will NOT override this setting */
     /* display: none; */
   }
+
 </style>

@@ -36,12 +36,9 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
-    <!-- <a href="/demos.html"><h3>Demos</h3></a> -->
-    <!-- <ul>
-      <li><router-link to="/demo1">Demo1</router-link></li>
-    </ul>
-    <router-view></router-view> -->
     <router-link to="/demos"><h3>Demos</h3></router-link>
+    <router-link to="demoChild1"><h3>Demo Child 1</h3></router-link>
+    <router-view/>
   </div>
 </template>
 
